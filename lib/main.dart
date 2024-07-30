@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sh_app/screens/event_screen.dart';
 import 'package:sh_app/screens/event_screen_calendar_view.dart';
+import 'package:sh_app/screens/schedule_screen.dart';
 import 'package:sh_app/utils/scroll_behaviour.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const EventScreen(),
-      home: CustomEventCalendarViewScreen(),
+      home: ScheduleScreen(),
       builder: (context, child) {
         return ScrollConfiguration(
           behavior: MyBehavior(),
